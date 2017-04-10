@@ -14,82 +14,137 @@
 <!--here is our container for the entire quiz-->
 <div class="container">
 	<h1 class="jumbtron"> Fantastic Foodie Trivia! </h1>
-
+	<h1>Time Remaining: </h1> 
 <!--here is our container for the start button -->
 	<div class="row" id="start-div">
-		
-	    <div class="col-sm-12" style="background-color:pink;">Click Start to begin</div>
-	    <button type="button" class="btn btn-primary btn-block" id="start">Start</button>
-	 </div>
+		    
+		<button type="button" class="btn btn-primary btn-block" id="start">Start</button>
+	    </div>
+	    
+	 
 <!-- this is where our timer will show -->
-<div class="container" id="timer-box">
-	<p>Time Remaining: </p>
-</div>
+<div class="row timer-box"> --> 
+	</div>
 
 <!--here is where we will list our questions -->
-<div class="container" id="questions-box">
-  	<h2>Question #1</h2>
-<p>What are the two top selling spices in the world?</p>
-  
-  <label class="radio-inline"><input type="radio" name="optradio">A: Pepper and mustard.</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Cinnamon and nutmeg.</label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Cumin and chili powder.</label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Basil and parsley.</label>
+<div class="container questions">
+<div class="col-lg-12 ">
+	<h2>Question #1</h2>
+ <p>What are the two top selling spices in the world?</p>
 
- 	<h2>Question #2</h2>
-<p>What was the first commercially manufactured breakfast cereal?</p>
-	<label class="radio-inline"><input type="radio" name="optradio">A: Cherrios</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Fruit Loops</label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Shredded Wheat</label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Raisin Bran</label>
+			 <form action="">
+				  <input type="radio" name="q1" id="pepper-mustard" value="pepper-mustard"> Pepper and mustard
+				  <input type="radio" name="q1" id="cinnamon-nutmeg" value="cinnamon-nutmeg"> Cinnamon and nutmeg. 
+				  <input type="radio" name="q1" id="cumin-chili" value="cumin-chili"> Cumin and chili powder
+				  <input type="radio" name="q1" id="basil-parsley" value="basil-parsley"> Basil and parsley
+			 </form>
+			 <br>
+		</div>
 
-		<h2>Question #3</h2>
-<p>Sauerkraut is made from what finely shredded vegetable?</p>
-	<label class="radio-inline"><input type="radio" name="optradio">A: Potatoes</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Cabbage</label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Celery </label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Yucca</label>
+<div class="col-lg-12 ">
+<h2>Question #2</h2>
+ <p>What was the first commercially manufactured breakfast cereal?</p>
 
-</div>
+			 <form action="">
+				  <input type="radio" name="q2" id="cheerios" value="cheerios"> Cheerios
+				  <input type="radio" name="q2" id="fruit-loops" value="fruit-loops"> Fruit Loops 
+				  <input type="radio" name="q2" id="shredded-wheat" value="shredded-wheat"> Shredded Wheat
+				  <input type="radio" name="q2" id="raisin-bran" value="raisin-bran"> Raisin Bran
+			 </form>
+			 <br>
+		</div>
 
-<h2>Question #4</h2>
-<p>What do the letters of the popular fast food chain KFC stand for?</p>
-	<label class="radio-inline"><input type="radio" name="optradio">A: Kentucky Fried and Caring</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Kernel Frank's Chicken</label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Kentucky Fried Chicken </label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Kansas Fried Cuisine</label>
+<div class="col-lg-12 ">
+<h2>Question #3</h2>
+ <p>Sauerkraut is made from what finely shredded vegetable?</p>
 
-	<h2>Question #5</h2>
+			 <form action="">
+				  <input type="radio" name="q3" id="cabbage" value="cabbage"> Cabbage
+				  <input type="radio" name="q3" id="celery" value="celery"> Celery 
+				  <input type="radio" name="q3" id="potatoes" value="potatoes"> Potatoes
+				  <input type="radio" name="q3" id="yucca" value="yucca"> Yucca
+			 </form>
+			 <br>
+		</div>
+ 	
+ <div class="col-lg-12 ">
+ 	<h2>Question #4</h2>
+ <p>What do the letters of the popular fast food chain KFC stand for?</p>
+
+			 <form action="">
+				  <input type="radio" name="q4" id="fried-caring" value="fried-caring"> Kentucky Fried and Caring
+				  <input type="radio" name="q4" id="frank" value="frank"> Kernel Frank's Chicken
+				  <input type="radio" name="q4" id="fried-chicken" value="fried-chicken"> Kentucky Fried Chicken
+				  <input type="radio" name="q4" id="fried-cuisine" value="fried-cuisine"> Kansas Fried Cuisine
+			 </form>
+			 <br>
+		</div>
+
+<div class="col-lg-12 ">
+<h2>Question #5</h2>
  <p>Guinness beer was first brewed in which country?</p>
-	<label class="radio-inline"><input type="radio" name="optradio">A: Estonia</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Germany </label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Mexico </label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Ireland</label>
 
+			 <form action="">
+				  <input type="radio" name="q5" id="estonia" value="estonia"> Estonia
+				  <input type="radio" name="q5" id="germany" value="germany"> Germany
+				  <input type="radio" name="q5" id="mexico" value="mexico"> Mexico
+				  <input type="radio" name="q5" id="ireland" value="ireland"> Ireland
+			 </form>
+			 <br>
+		</div>
+
+<div class="col-lg-12 ">
 <h2>Question #6</h2>
  <p>What was the name of Cheerios when it was first marketed over 50 years ago?</p>
-	<label class="radio-inline"><input type="radio" name="optradio">A: Totes Oats</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Oat Wheels </label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Wheat Loops </label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Cheerioats</label>
 
+			 <form action="">
+				  <input type="radio" name="q6" id="totes" value="totes"> Totes Oats
+				  <input type="radio" name="q6" id="oat-wheels" value="oat=wheels"> Oat Wheels
+				  <input type="radio" name="q6" id="wheat-loops" value="wheat-loops"> Wheat Loops
+				  <input type="radio" name="q6" id="cheerioats" value="cheerioats"> Cheerioats
+			 </form>
+			 <br>
+		</div>
+
+<div class="col-lg-12 ">
 <h2>Question #7</h2>
  <p>What is the Spanish word for a heated tortilla filled with cheese?</p>
-	<label class="radio-inline"><input type="radio" name="optradio">A: Sopapilla</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Enchilada </label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Flauta </label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Quesadilla</label>
 
+			 <form action="">
+				  <input type="radio" name="q7" id="sopapilla" value="sopapilla"> Sopapilla
+				  <input type="radio" name="q7" id="enchilada" value="enchilada"> Enchilada
+				  <input type="radio" name="q7" id="flauta" value="flauta"> Flauta
+				  <input type="radio" name="q7" id="quesadilla" value="quesadilla"> Quesadilla
+			 </form>
+			 <br>
+		</div>
+
+<div class="col-lg-12 ">	
 <h2>Question #8</h2>
  <p>What popular beverage once contained cocaine?</p>
-	<label class="radio-inline"><input type="radio" name="optradio">A: Dr. Pepper</label>
-<label class="radio-inline"><input type="radio" name="optradio">B: Coca-Cola </label>
-<label class="radio-inline"><input type="radio" name="optradio">C: Strawberry Fanta </label>
-<label class="radio-inline"><input type="radio" name="optradio">D: Ginger Ale</label>
+
+			 <form action="">
+				  <input type="radio" name="q8" id="dr-pepper" value="dr-pepper"> Dr. Pepper
+				  <input type="radio" name="q8" id="coca-cola" value="coca-cola"> Coca-Cola
+				  <input type="radio" name="q8" id="fanta" value="fanta"> Strawberry Fanta
+				  <input type="radio" name="q8" id="ginger-ale" value="ginger-ale"> Ginger Ale
+			 </form>
+			 <br>
+		</div>
+<button type="button" class="btn btn-primary submit">Submit </button>
+	</div>
 
 <!--this ends our question-box container-->
 </div>
 
+<div class="row result">
+		<div class="col-lg-12">
+			<h1>You're Done!</h1>
+			<p class="correct">Correct Answers: <span id="correct"></span> </p>
+			<p class="incorrect">Incorrect Answers: <span id="incorrect"></span></p>
+			<p class="unanswered">Unanswered Questions: <span id="unanswered"></span></p>
+		</div>
+	</div>
 
 <!--this ends our main container div --> 
 </div>
